@@ -11,7 +11,7 @@ let imprimirComidas = () => {
     for(let raiz of raizes){
         lista.innerHTML += `<li>${raiz.nome}</li>`
     }   
-    
+
     corpo.style.backgroundColor = Cor;
 }
 
