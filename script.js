@@ -7,19 +7,19 @@ let raizes = [
     {nome:"rabanete"}
 ];
 
-let imprimirComidas = () => { 
+let imprimirComidas = (cor) => { 
     for(let raiz of raizes){
         lista.innerHTML += `<li>${raiz.nome}</li>`
     }   
 
-    corpo.style.backgroundColor = Cor;
+    corpo.style.backgroundColor = cor;
 }
 
 let adicionarComida = (callback) =>{
     let escolheCor = prompt("Digite uma cor em ingles");
     setTimeout(() => {
         raizes.push({nome:"gengibre"});
-        callback();
+        callback(escolheCor);
     }, 2000);
 };
 
